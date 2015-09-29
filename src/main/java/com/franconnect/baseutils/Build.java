@@ -17,7 +17,7 @@ public class Build {
 	//Browser selection
 	@Test
 	public static void openBrowser(){		
-		
+		System.out.println("Hello Brother!");
 		String browser_name="firefox";
 		if(browser_name!=null&&browser_name.equalsIgnoreCase("firefox")){
 			Build.driver = new FirefoxDriver();
@@ -25,7 +25,8 @@ public class Build {
 		
 		else if(browser_name!=null&&browser_name.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver","browsers\\chromedriver.exe");
-			Build.driver=new ChromeDriver();		}
+			Build.driver=new ChromeDriver();		
+		}
 		
 		else if(browser_name!=null&&browser_name.equalsIgnoreCase("safari")){
 			System.out.println("Work in Progress............Browser is not available!");

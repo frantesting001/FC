@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 24 08:25:56 IST 2015</td>
+<td>Started on:</td><td>Tue Sep 29 23:37:19 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>60 seconds (60496 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (39 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,45 +67,24 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.franconnect.baseutils.Build.openBrowser()'><b>openBrowser</b><br>Test class: com.franconnect.baseutils.Build</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created exception
-from disconnected: received Inspector.detached event
-  (Session info: Opera with embedded Chromium 0.1948.25)
-  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 50.30 seconds
-Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;
-System info: host: &apos;RohitK&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.opera.OperaDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
-	at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:169)
-	at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:158)
-	at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:115)
-	at com.franconnect.baseutils.Build.openBrowser(Build.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+<td title='com.franconnect.baseutils.ABC.add()'><b>add</b><br>Test class: com.franconnect.baseutils.ABC</td>
+<td><div><pre>org.testng.TestNGException: 
+Method add requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1269)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:773)
@@ -122,37 +101,16 @@ Driver info: org.openqa.selenium.opera.OperaDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-</pre></div><a href='#' onClick='toggleBox("stack-trace775386112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace775386112'><pre>org.openqa.selenium.SessionNotCreatedException: session not created exception
-from disconnected: received Inspector.detached event
-  (Session info: Opera with embedded Chromium 0.1948.25)
-  (Driver info: OperaDriver=0.2.0 (ba47709ed9e35ce26dbd960fb5d75be104290d96),platform=Windows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 50.30 seconds
-Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;
-System info: host: &apos;RohitK&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.opera.OperaDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
-	at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:169)
-	at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:158)
-	at org.openqa.selenium.opera.OperaDriver.&lt;init&gt;(OperaDriver.java:115)
-	at com.franconnect.baseutils.Build.openBrowser(Build.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+</pre></div><a href='#' onClick='toggleBox("stack-trace760563749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace760563749'><pre>org.testng.TestNGException: 
+Method add requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1269)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:773)
@@ -170,8 +128,8 @@ Driver info: org.openqa.selenium.opera.OperaDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 </pre></div></td>
-<td>60</td>
-<td>com.franconnect.baseutils.Build@725bef66</td></tr>
+<td>0</td>
+<td>com.franconnect.baseutils.ABC@7dc36524</td></tr>
 </table><p>
 </body>
 </html>
